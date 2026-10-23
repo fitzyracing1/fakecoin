@@ -1,0 +1,14 @@
+[project]
+name = "fakecoin"
+version = "0.1.0"
+description = "Detect coin/token repos whose CI is lit but which are dark on-chain"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = []
+[project.scripts]
+fakecoin = "fakecoin.cli:main"
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools]
+packages = ["fakecoin"]
